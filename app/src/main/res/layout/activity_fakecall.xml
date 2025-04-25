@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/nonameback"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/caller_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Caller Name" />
+
+    <EditText
+        android:id="@+id/caller_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Caller Number" />
+
+    <ImageView
+        android:id="@+id/caller_image_view"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:contentDescription="Caller Image"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/select_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Caller Image" />
+
+    <Button
+        android:id="@+id/start_fake_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Fake Call" />
+
+    <Button
+        android:id="@+id/default_fake_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Default Fake Call" />
+</LinearLayout>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+
+
+
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31"
+        android:theme="@style/CustomActionBar">
+
+        <activity
+            android:name="com.project.user.UserAlertActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.project.user.UserDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.project.admin.AddUserActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.project.user.UserLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.project.admin.AdminLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/noActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+
+        <activity
+            android:name="com.project.sheild.SukoonWebViewActivity"
+            android:theme="@style/noActionBar"
+            android:label="Therapy">
+        </activity>
+        <activity
+            android:name="com.project.sheild.FakeCall"
+
+            android:label="Fake Call">
+        </activity>
+        <activity
+            android:name="com.project.sheild.CallScreenActivity"
+            android:theme="@style/noActionBar"
+            android:label="Fake Call">
+        </activity>
+
+
+
+
+        <!-- Other Activities -->
+        <activity
+            android:name="com.project.sheild.AboutUs"
+            android:exported="false"
+            android:label="AboutUs"
+            android:parentActivityName="com.project.sheild.MainActivity1"
+            android:theme="@style/Theme.New" />
+
+        <activity
+            android:name="com.project.sheild.MagBtnInst"
+            android:exported="false"
+            android:label="Detailed Instructions"
+            android:parentActivityName="com.project.sheild.Magnetometer"
+            android:theme="@style/Theme.New" />
+
+        <activity
+            android:name="com.project.sheild.SosInsructionsActivity"
+            android:exported="false"
+            android:label="SOS Instructions"
+            android:parentActivityName="com.project.sheild.SmsActivity"
+            android:theme="@style/Theme.New" />
+
+
+
+        <activity
+            android:name="com.project.sheild.Magnetometer"
+            android:exported="false"
+            android:label="Spy Camera Detector"
+            android:parentActivityName="com.project.sheild.ChoosenActivity"
+            android:theme="@style/Theme.New" />
+
+        <activity
+            android:name="com.project.sheild.MagnoInst"
+            android:exported="false"
+            android:label="Manual Detection"
+            android:parentActivityName="com.project.sheild.ChoosenActivity"
+            android:theme="@style/Theme.New" />
+
+        <activity
+            android:name="com.project.sheild.Outside"
+            android:exported="false"
+            android:label="Outside Instructions"
+            android:parentActivityName="com.project.sheild.MagnoInst"
+            android:theme="@style/Theme.New" />
+
+        <activity
+            android:name="com.project.sheild.ChangingRoom"
+            android:exported="false"
+            android:label="ChangingRoom Instructions"
+            android:parentActivityName="com.project.sheild.MagnoInst"
+            android:theme="@style/Theme.New" />
+
+        <activity
+            android:name="com.project.sheild.Bedroom"
+            android:exported="false"
+            android:label="Bedroom Instructions"
+            android:parentActivityName="com.project.sheild.MagnoInst"
+            android:theme="@style/Theme.New" />
+
+        <activity
+            android:name="com.project.sheild.Bathroom"
+            android:exported="false"
+            android:label="Bathroom Instructions"
+            android:parentActivityName="com.project.sheild.MagnoInst"
+            android:theme="@style/Theme.New" />
+
+        <activity
+            android:name="com.project.sheild.ChoosenActivity"
+            android:exported="false"
+            android:label="Detect Hidden Cameras"
+            android:parentActivityName="com.project.sheild.MainActivity1"
+            android:theme="@style/Theme.New" />
+
+        <activity
+            android:name="com.project.sheild.NewsActivity"
+            android:exported="false"
+            android:label="Women's News"
+            android:parentActivityName="com.project.sheild.MainActivity1"
+            android:theme="@style/Theme.New" />
+
+        <activity
+            android:name="com.project.sheild.Instructions"
+            android:exported="false"
+            android:label="App Tour"
+            android:parentActivityName="com.project.sheild.MainActivity1"
+            android:theme="@style/Theme.New" />
+
+        <activity
+            android:name="com.project.sheild.webactivity"
+            android:theme="@style/noActionBar"
+            android:exported="false" />
+
+        <activity
+            android:name="com.project.sheild.SmsActivity"
+            android:exported="false"
+            android:label="Emergency Service"
+            android:parentActivityName="com.project.sheild.MainActivity1"
+            android:theme="@style/Theme.New" />
+
+        <activity
+            android:name="com.project.sheild.CurrentLocation"
+            android:exported="false" />
+
+        <activity
+            android:name="com.project.sheild.Flashing"
+            android:exported="false" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/noActionBar"/>
+        <activity android:name="com.project.sheild.MainActivity1"
+            android:theme="@style/noActionBar"
+            />
+
+        <service android:name="com.project.sheild.ScreenOnOffBackgroundService" />
+
+
+        <service
+            android:name="com.project.util.SafetyNotification"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.project.sheild.VideoRecordingService"
+            android:foregroundServiceType="camera"/>
+
+        <service
+            android:name="com.project.util.MyForegroundService"
+            android:foregroundServiceType="location" />
+
+        <receiver android:name="com.project.util.NotificationReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="your.custom.NOTIFICATION_ACTION" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_stat_ic_notification" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/purple_200" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+    </application>
+
+</manifest>

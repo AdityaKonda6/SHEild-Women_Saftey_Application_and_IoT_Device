@@ -1,0 +1,67 @@
+[versions]
+agp = "8.6.1"
+androidxAppcompat = "1.6.1"
+androidxEspressoCore = "3.5.1"
+androidxJunit = "1.1.3"
+androidxJunitVersion = "1.1.5"
+appcompatVersion = "1.3.1"
+cardview = "1.0.0"
+constraintlayout = "2.1.4"
+espressoCoreVersion = "3.4.0"
+firebaseBom = "33.4.0"
+firebaseMessaging = "24.0.2"
+glide = "4.12.0"
+glideVersion = "4.11.0"
+googleMaterial = "1.11.0"
+gridlayout = "1.0.0"
+junit = "4.13.2"
+junitJunit = "4.12"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+lottie = "3.4.0"
+material = "1.12.0"
+materialVersion = "1.4.0"
+navigationFragment = "2.8.1"
+playServicesBom = "20.7.0"
+playServicesLocation = "21.3.0"
+retrofit = "2.3.0"
+volley = "1.2.1"
+
+[libraries]
+appcompat-v131 = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
+appcompat-v161 = { module = "androidx.appcompat:appcompat", version.ref = "androidxAppcompat" }
+cardview = { module = "androidx.cardview:cardview", version.ref = "cardview" }
+compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "glide" }
+constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+espresso-core-v340 = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCoreVersion" }
+espresso-core-v351 = { module = "androidx.test.espresso:espresso-core", version.ref = "androidxEspressoCore" }
+firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+firebase-messaging = { module = "com.google.firebase:firebase-messaging", version.ref = "firebaseMessaging" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+glide-v4110 = { module = "com.github.bumptech.glide:glide", version.ref = "glideVersion" }
+gridlayout = { module = "androidx.gridlayout:gridlayout", version.ref = "gridlayout" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+junit-v113 = { module = "androidx.test.ext:junit", version.ref = "androidxJunit" }
+junit-v115 = { module = "androidx.test.ext:junit", version.ref = "androidxJunitVersion" }
+junit-v412 = { module = "junit:junit", version.ref = "junitJunit" }
+lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+material-v1110 = { module = "com.google.android.material:material", version.ref = "googleMaterial" }
+material-v140 = { module = "com.google.android.material:material", version.ref = "materialVersion" }
+navigation-fragment = { module = "androidx.navigation:navigation-fragment", version.ref = "navigationFragment" }
+navigation-ui = { module = "androidx.navigation:navigation-ui", version.ref = "navigationFragment" }
+play-services-bom = { module = "com.google.android.gms:play-services-bom", version.ref = "playServicesBom" }
+play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocation" }
+play-services-speech = { module = "com.google.android.gms:play-services-speech" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+volley = { module = "com.android.volley:volley", version.ref = "volley" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+
